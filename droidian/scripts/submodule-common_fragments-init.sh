@@ -4,8 +4,8 @@
 #
 # Version 0.0.1
 #
-# Upstream-Name: droidian-kernel-build-template$
-# Source: https://github.com/droidian-berb/droidian-kernel-build-template$
+# Upstream-Name: droidian-kernel-build-template
+# Source: https://github.com/droidian-berb/droidian-kernel-build-template
 #
 # Copyright (C) 2024 Berbascum <berbascum@ticv.cat>
 # All rights reserved.
