@@ -29,18 +29,14 @@ DEVICE_FULL_NAME = Xiaomi Pocophone X3 Pro
 # Whether to use configuration fragments to augment the kernel configuration.
 # If unsure, keep this to 0.
 KERNEL_CONFIG_USE_FRAGMENTS = 1
-# Enable debug common_fragment
-# The common_fragments submodule showld be installed
-KERNEL_CONFIG_USE_DEBUG_COMMON_FRAGMENT = 0
 
 # Enable kernel config device extra fragments
 KERNEL_CONFIG_USE_EXTRA_FRAGMENTS = 1
 KERNEL_CONFIG_EXTRA_FRAGMENTS = vayu-halium.config
-#vayu-test.config
-
-# Enable kernel config device extra debug fragment
-# droidian/<device_model>-debug.config
-KERNEL_CONFIG_USE_DEBUG_EXTRA_FRAGMENT = 0
+KERNEL_CONFIG_USE_DEVEL_FRAGMENTS = 1
+KERNEL_CONFIG_DEVEL_FRAGMENTS = vayu-test.config vayu-develop.config
+KERNEL_CONFIG_USE_DEBUG_FRAGMENTS = 1
+KERNEL_CONFIG_DEBUG_FRAGMENTS = vayu-debug.config common_fragments/debug.config
 
 # Whether to use diffconfig to generate the device-specific configuration.
 # If you enable this, you should set KERNEL_CONFIG_USE_FRAGMENTS to 1.
