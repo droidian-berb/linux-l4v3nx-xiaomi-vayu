@@ -204,26 +204,24 @@ BUILD_CLANG_TRIPLET = aarch64-linux-gnu-
 
 # The compiler to use. Recent Android kernels are built with clang.
 BUILD_CC = clang
-
+#CLANG_VERSION = 10.0-r370808
+#CLANG_VERSION = 11.0-r383902
+CLANG_VERSION = 12.0-r416183b
+#CLANG_VERSION = 14.0-r450784d
 # Use llvm instead of gcc. Recent Android kernels (past android 12) need llvm.
 BUILD_LLVM = 1
 
 # Extra paths to prepend to the PATH variable. You'll probably want
 # to specify the clang path here (the default).
 # Paths for lineage kernel build
-BUILD_PATH = /usr/lib/llvm-android-14.0-r450784d/bin
-#BUILD_PATH = /opt/build-tools/linux-x86/bin:/opt/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9/aarch64-linux-android/bin:/opt/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9/bin:/usr/lib/llvm-android-14.0-r450784d/bin:/opt/android_prebuilts_tools-lineage/linux-x86/bin
-
-# 10 r370808
-# 12 r416183b
-# 14 r450784d
+BUILD_PATH = /usr/lib/llvm-android-$(CLANG_VERSION)/bin
 
 # Extra packages to add to the Build-Depends section. Mainline builds
 # can have this section empty, unless cross-building.
 
 # The default is enough to install the Android toolchain, including clang.
-#DEB_TOOLCHAIN = linux-initramfs-halium-generic:arm64, binutils-aarch64-linux-gnu, clang-android-14.0-r450784d
-DEB_TOOLCHAIN = linux-initramfs-halium-generic:arm64, binutils-aarch64-linux-gnu, clang-android-14.0-r450784d, gcc-4.9-aarch64-linux-android, g++-4.9-aarch64-linux-android, libgcc-4.9-dev-aarch64-linux-android-cross
+#DEB_TOOLCHAIN = linux-initramfs-halium-generic:arm64, binutils-aarch64-linux-gnu, clang-android-$(CLANG_VERSION)
+DEB_TOOLCHAIN = linux-initramfs-halium-generic:arm64, binutils-aarch64-linux-gnu, clang-android-$(CLANG_VERSION), gcc-4.9-aarch64-linux-android, g++-4.9-aarch64-linux-android, libgcc-4.9-dev-aarch64-linux-android-cross
 
 # Where we're building on
 DEB_BUILD_ON = amd64
