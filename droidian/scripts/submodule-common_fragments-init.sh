@@ -63,4 +63,4 @@ branch_name=$(git ls-remote --heads https://github.com/droidian-devices/common_f
 echo  "branch_name = ${branch_name}"
 
 git submodule add -b ${branch_name} https://github.com/droidian-devices/common_fragments droidian/common_fragments
-git submodule update --init --recursive
+git submodule update --init --recursive --remote

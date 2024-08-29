@@ -39,4 +39,4 @@
 [ ! -d ".git" ] && echo "$(basename $0): Not a git repo" && exit
 
 git submodule add https://github.com/droidian-berb/kernel-halium-tree-patches droidian/kernel_patches
-git submodule update --init --recursive
+git submodule update --init --recursive --remote
