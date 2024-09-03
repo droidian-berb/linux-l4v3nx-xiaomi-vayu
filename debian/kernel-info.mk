@@ -213,6 +213,7 @@ BUILD_LLVM = 1
 #CLANG_VERSION = 11.0-r383902
 CLANG_VERSION = 12.0-r416183b
 #CLANG_VERSION = 14.0-r450784d
+#CLANG_VERSION = 17.0-r487747
 
 # Set to 1 to use a manually installed toolchain
 # Remember to update the path in BUILD_PATH
