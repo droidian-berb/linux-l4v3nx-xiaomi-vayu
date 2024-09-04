@@ -208,6 +208,9 @@ BUILD_CC = clang
 # Use llvm instead of gcc. Recent Android kernels (past android 12) need llvm.
 BUILD_LLVM = 1
 
+# Enable verbose mode
+ENABLE_VERBOSE = 0
+
 # Set clang version
 #CLANG_VERSION = 10.0-r370808
 #CLANG_VERSION = 11.0-r383902
