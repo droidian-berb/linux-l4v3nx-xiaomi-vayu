@@ -1,8 +1,17 @@
-linux-android-xiaomi-vayu (4.14.314+droidian1-rc8+git20240910193101.1193058.droidian.l4v3nx.sid) droidian-l4v3nx; urgency=medium
+linux-android-xiaomi-vayu (4.14.314+droidian1-rc9+git20240910225106.1c21b17.droidian.l4v3nx.sid) droidian-l4v3nx; urgency=medium
+
+  * (droidian) kernel-info: enable EXTRA_FRAGMENTS only for vayu-optimizations
+  * Revert "(defconfig): vayu-optimizations: disable CONFIG_TRIM_UNUSED_KSYMS"
+  * (defconfig) vayu-optimizations: enable LD_DEAD_CODE_DATA_ELIMINATION
+
+ -- berbascum <berbascum@ticv.cat>  Wed, 11 Sep 2024 00:51:06 +0200
+
+linux-android-xiaomi-vayu (4.14.314+droidian1-rc8) next; urgency=medium
 
   * (droidian) kernel-info: disable the EXTRA_FRAGMENTS var
+  * Pre-release: l4v3nx-4.14.314-droidian1-rc8
 
- -- berbascum <berbascum@ticv.cat>  Tue, 10 Sep 2024 21:31:01 +0200
+ -- berbascum <berbascum@ticv.cat>  Tue, 10 Sep 2024 22:12:12 +0200
 
 linux-android-xiaomi-vayu (4.14.314+droidian1-rc7) next; urgency=medium
 
