@@ -1,9 +1,23 @@
-linux-android-xiaomi-vayu (4.14.314+droidian1-rc10+git20240911002630.99ee72d.droidian.l4v3nx.sid) droidian-l4v3nx; urgency=medium
+linux-android-xiaomi-vayu (4.14.314+droidian1-rc11+git20240911191804.b7fd973.droidian.l4v3nx.sid) droidian-l4v3nx; urgency=medium
+
+  * (defconfig) vayu-debug: add DEBUG_FS and DEBUG_KERNEL
+  * (defconfig) cgroupv2: start configs depuration
+  * (droidian) kernel-info: update the EXTRA_FRAGMENTS
+  *  (droidian) kernel-info: enable DEBUG_FRAGMENTS with only vayu-debug
+  * (defconfig) vayu-fragment: remove IRIS fm not in kernel tree
+  * (defconfig) vayu-debug: disable all the debug options, but not disable DEBUG fragments
+  * (cmdline) kernel-info: remove binder.global_pid_lookup=0
+  * (cmdline) kernel-info: add cgroup_enable=cpuset,cpu
+
+ -- berbascum <berbascum@ticv.cat>  Wed, 11 Sep 2024 21:18:04 +0200
+
+linux-android-xiaomi-vayu (4.14.314+droidian1-rc10) next; urgency=medium
 
   * (droidian) kernel-info: enable vayu-droidian and container fragments
   * (defconfig) vayu-fragment: fix typo in CONFIG_MODVERSIONS
+  * Pre-release: l4v3nx-4.14.314-droidian1-rc10
 
- -- berbascum <berbascum@ticv.cat>  Wed, 11 Sep 2024 02:26:30 +0200
+ -- berbascum <berbascum@ticv.cat>  Wed, 11 Sep 2024 02:55:57 +0200
 
 linux-android-xiaomi-vayu (4.14.314+droidian1-rc9) next; urgency=medium
 
