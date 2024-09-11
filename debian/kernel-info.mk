@@ -32,7 +32,7 @@ KERNEL_CONFIG_USE_FRAGMENTS = 1
 
 # Enable kernel config device extra fragments
 KERNEL_CONFIG_USE_EXTRA_FRAGMENTS = 1
-KERNEL_CONFIG_EXTRA_FRAGMENTS = vayu-optimizations.config #vayu-droidian.config vayu-halium.config  #vayu-halium-extended.config #container.config
+KERNEL_CONFIG_EXTRA_FRAGMENTS = vayu-optimizations.config vayu-droidian.config container.config #vayu-halium.config  #vayu-halium-extended.config
 KERNEL_CONFIG_USE_DEVEL_FRAGMENTS = 0
 # KERNEL_CONFIG_DEVEL_FRAGMENTS = vayu-test.config vayu-develop.config
 KERNEL_CONFIG_USE_DEBUG_FRAGMENTS = 0
