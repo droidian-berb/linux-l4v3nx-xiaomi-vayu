@@ -1,11 +1,31 @@
-linux-android-xiaomi-vayu (4.14.314+droidian1-rc12+git20240911200052.1527457.droidian.l4v3nx.sid) droidian-l4v3nx; urgency=medium
+linux-android-xiaomi-vayu (4.14.314+droidian1-rc13+git20240912104234.1734dda.droidian.l4v3nx.sid) droidian-l4v3nx; urgency=medium
+
+  [ berbascum ]
+  * (fragments) vayu-droidian: add some cgroup net configs
+  * (fragments) vayu-security: split security configs to a new fragment
+  * (fragments) vayu-halium: move extra halium friendly configs from extended-fragment
+  * (fragments) kernel-info: add vayu-security to EXTRA_FRAFMENTS
+  * arm64/neon: Improve condition for disabling
+  * (cmdline) kernel-info: revert cgroup_v1 fully disable
+  * (cmdline) kernel-info: remove duplicated androidboot.memcg flag
+
+  [ Nathan Chancellor ]
+  * arm64/neon: Disable -Wincompatible-pointer-types when building with Clang.
+
+  [ Jackie Liu ]
+  * arm64/neon: Add workaround for ambiguous C99 stdint.h types.
+
+ -- berbascum <berbascum@ticv.cat>  Thu, 12 Sep 2024 12:42:34 +0200
+
+linux-android-xiaomi-vayu (4.14.314+droidian1-rc12) next; urgency=medium
 
   * (defconfig) vayu-droidian: import cgroup net configs from vayu-halium fragment
   * (fragments) kernel-info: reorder vayu-halium before containers
   * (fragments) vayu-halium: reorder and clean the configs in fragment
   * (fragments) vayu-halium: enable other mer recomended configs
+  * Pre-release: l4v3nx-4.14.314-droidian1-rc12
 
- -- berbascum <berbascum@ticv.cat>  Wed, 11 Sep 2024 22:00:52 +0200
+ -- berbascum <berbascum@ticv.cat>  Wed, 11 Sep 2024 23:59:57 +0200
 
 linux-android-xiaomi-vayu (4.14.314+droidian1-rc11) next; urgency=medium
 
