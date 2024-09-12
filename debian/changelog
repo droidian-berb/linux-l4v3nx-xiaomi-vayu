@@ -1,4 +1,21 @@
-linux-android-xiaomi-vayu (4.14.314+droidian1-rc13+git20240912104234.1734dda.droidian.l4v3nx.sid) droidian-l4v3nx; urgency=medium
+linux-android-xiaomi-vayu (4.14.314+droidian1-rc14+git20240912125357.096270d.droidian.l4v3nx.sid) droidian-l4v3nx; urgency=medium
+
+  * (fragments) vayu-halium: move vayu-halium-DEVELOP to vayu-halium-lxc
+  * (fragment) vayu-test-3: remove fragment
+  * (fragment) vayu-test-crdroid*: remove fragment
+  * (fragment) vayu-halium-extended: remove fragment
+  * (fragments) vayu-test*: clean test fragments and merge to one vayu-test
+  * (fragment) vayu: disable MODULE_SIG
+  * (fragment) vayu: enable CONFIG_QCOM_DLOAD_MODE
+  * (fragment) vayu-security: enable mem and fs protections
+  * (fragment) vayu-security: rename to vayu-halium-security
+  * (fragment) vayu-halium: enable SWAP and SYSFS_SYSCALL
+  * (fragment) vayu-halium-net: create new fragment with the halium friendly net configs
+  * (fragments) kernel-info-mk: update extra fragments file list
+
+ -- berbascum <berbascum@ticv.cat>  Thu, 12 Sep 2024 14:53:57 +0200
+
+linux-android-xiaomi-vayu (4.14.314+droidian1-rc13) next; urgency=medium
 
   [ berbascum ]
   * (fragments) vayu-droidian: add some cgroup net configs
@@ -8,6 +25,7 @@ linux-android-xiaomi-vayu (4.14.314+droidian1-rc13+git20240912104234.1734dda.dro
   * arm64/neon: Improve condition for disabling
   * (cmdline) kernel-info: revert cgroup_v1 fully disable
   * (cmdline) kernel-info: remove duplicated androidboot.memcg flag
+  * Pre-release: l4v3nx-4.14.314-droidian1-rc13
 
   [ Nathan Chancellor ]
   * arm64/neon: Disable -Wincompatible-pointer-types when building with Clang.
@@ -15,7 +33,7 @@ linux-android-xiaomi-vayu (4.14.314+droidian1-rc13+git20240912104234.1734dda.dro
   [ Jackie Liu ]
   * arm64/neon: Add workaround for ambiguous C99 stdint.h types.
 
- -- berbascum <berbascum@ticv.cat>  Thu, 12 Sep 2024 12:42:34 +0200
+ -- berbascum <berbascum@ticv.cat>  Thu, 12 Sep 2024 14:34:36 +0200
 
 linux-android-xiaomi-vayu (4.14.314+droidian1-rc12) next; urgency=medium
 
