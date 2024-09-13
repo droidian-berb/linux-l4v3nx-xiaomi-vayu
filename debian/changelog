@@ -1,4 +1,16 @@
-linux-android-xiaomi-vayu (4.14.314+droidian1-rc14+git20240912133353.0c35d57.droidian.l4v3nx.production) trixie; urgency=medium
+linux-android-xiaomi-vayu (4.14.314+droidian2-rc1+git20240913005038.fb72a31.droidian.l4v3nx.sid) trixie; urgency=medium
+
+  * (defconfig) vayu: enable NFC configs
+
+ -- berbascum <berbascum@ticv.cat>  Fri, 13 Sep 2024 02:50:38 +0200
+
+linux-android-xiaomi-vayu (4.14.314+droidian1) stable; urgency=medium
+
+  * Release: l4v3nx-4.14.314-droidian1
+
+ -- berbascum <berbascum@ticv.cat>  Fri, 13 Sep 2024 02:44:32 +0200
+
+linux-android-xiaomi-vayu (4.14.314+droidian1-rc14) next; urgency=medium
 
   * (fragments) vayu-halium: move vayu-halium-DEVELOP to vayu-halium-lxc
   * (fragment) vayu-test-3: remove fragment
