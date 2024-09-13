@@ -1,4 +1,4 @@
-linux-android-xiaomi-vayu (4.14.314+droidian1-rc14+git20240912125357.096270d.droidian.l4v3nx.sid) droidian-l4v3nx; urgency=medium
+linux-android-xiaomi-vayu (4.14.314+droidian1-rc14+git20240912133353.0c35d57.droidian.l4v3nx.production) trixie; urgency=medium
 
   * (fragments) vayu-halium: move vayu-halium-DEVELOP to vayu-halium-lxc
   * (fragment) vayu-test-3: remove fragment
@@ -12,8 +12,9 @@ linux-android-xiaomi-vayu (4.14.314+droidian1-rc14+git20240912125357.096270d.dro
   * (fragment) vayu-halium: enable SWAP and SYSFS_SYSCALL
   * (fragment) vayu-halium-net: create new fragment with the halium friendly net configs
   * (fragments) kernel-info-mk: update extra fragments file list
+  * Pre-release: l4v3nx-4.14.314-droidian1-rc14
 
- -- berbascum <berbascum@ticv.cat>  Thu, 12 Sep 2024 14:53:57 +0200
+ -- berbascum <berbascum@ticv.cat>  Thu, 12 Sep 2024 15:33:53 +0200
 
 linux-android-xiaomi-vayu (4.14.314+droidian1-rc13) next; urgency=medium
 
