@@ -1,9 +1,16 @@
-linux-android-xiaomi-vayu (4.14.314+droidian2-rc3+git20240913053639.b2ca04c.droidian.l4v3nx.sid) trixie; urgency=medium
+linux-android-xiaomi-vayu (4.14.314+droidian2-rc4+git20240914134712.7e98dff.droidian.l4v3nx.sid) trixie; urgency=medium
+
+  * (defconfig) vayu: disable NFC configs, keep only NFC_NQ
+
+ -- berbascum <berbascum@ticv.cat>  Sat, 14 Sep 2024 15:47:12 +0200
+
+linux-android-xiaomi-vayu (4.14.314+droidian2-rc3) next; urgency=medium
 
   * (defconfig) vayu: enable additional NFC configs I2C NXP
   * (fragments) vayu-halium: disable extra halium configs
+  * Pre-release: l4v3nx-4.14.314-droidian2-rc3
 
- -- berbascum <berbascum@ticv.cat>  Fri, 13 Sep 2024 07:36:39 +0200
+ -- berbascum <berbascum@ticv.cat>  Fri, 13 Sep 2024 08:07:38 +0200
 
 linux-android-xiaomi-vayu (4.14.314+droidian2-rc2) next; urgency=medium
 
