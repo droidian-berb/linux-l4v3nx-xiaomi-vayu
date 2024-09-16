@@ -1,8 +1,15 @@
-linux-android-xiaomi-vayu (4.14.314+droidian2+git20240916115200.2711634.droidian.l4v3nx.production) trixie; urgency=medium
+linux-android-xiaomi-vayu (4.14.314+droidian3-rc1+git20240916222218.26884ba.droidian.l4v3nx.sid) droidian-l4v3nx-sid; urgency=medium
+
+  * (fragments) extra: enable container.config
+
+ -- berbascum <berbascum@ticv.cat>  Tue, 17 Sep 2024 00:22:18 +0200
+
+linux-android-xiaomi-vayu (4.14.314+droidian2) production; urgency=medium
 
   * (fake) add-tag: droidian2_production from droidian2-rc5
+  * Release: l4v3nx-4.14.314-droidian2_production
 
- -- berbascum <berbascum@ticv.cat>  Mon, 16 Sep 2024 13:52:00 +0200
+ -- berbascum <berbascum@ticv.cat>  Tue, 17 Sep 2024 00:12:36 +0200
 
 linux-android-xiaomi-vayu (4.14.314+droidian2-rc5) next; urgency=medium
 
