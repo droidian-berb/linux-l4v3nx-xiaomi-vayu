@@ -1,8 +1,16 @@
-linux-android-xiaomi-vayu (4.14.314+droidian3-rc1+git20240916222218.26884ba.droidian.l4v3nx.sid) droidian-l4v3nx-sid; urgency=medium
+linux-android-xiaomi-vayu (4.14.314+droidian3-rc2+git20240917000642.d9f9da0.droidian.l4v3nx.sid) droidian-l4v3nx-sid; urgency=medium
+
+  * (defconfig) vayu-debug: enable DEBUG_FS
+  * Revert "(dts) nfc: enable nq-esepwr in vayu dtsi"
+
+ -- berbascum <berbascum@ticv.cat>  Tue, 17 Sep 2024 02:06:42 +0200
+
+linux-android-xiaomi-vayu (4.14.314+droidian3-rc1) next; urgency=medium
 
   * (fragments) extra: enable container.config
+  * Pre-release: l4v3nx-4.14.314-droidian3-rc1
 
- -- berbascum <berbascum@ticv.cat>  Tue, 17 Sep 2024 00:22:18 +0200
+ -- berbascum <berbascum@ticv.cat>  Tue, 17 Sep 2024 00:57:42 +0200
 
 linux-android-xiaomi-vayu (4.14.314+droidian2) production; urgency=medium
 
