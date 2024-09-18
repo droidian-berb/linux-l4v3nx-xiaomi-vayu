@@ -1,9 +1,16 @@
-linux-android-xiaomi-vayu (4.14.314+droidian3-rc2+git20240917000642.d9f9da0.droidian.l4v3nx.sid) droidian-l4v3nx-sid; urgency=medium
+linux-android-xiaomi-vayu (4.14.314+droidian3-rc3+git20240918185702.ed4c3fa.droidian.l4v3nx.sid) droidian-l4v3nx-sid; urgency=medium
+
+  * (cmdline) kernel-info: disable unified cgroup hierarchi to use some v1 controllers
+
+ -- berbascum <berbascum@ticv.cat>  Wed, 18 Sep 2024 20:57:02 +0200
+
+linux-android-xiaomi-vayu (4.14.314+droidian3-rc2) next; urgency=medium
 
   * (defconfig) vayu-debug: enable DEBUG_FS
   * Revert "(dts) nfc: enable nq-esepwr in vayu dtsi"
+  * Pre-release: l4v3nx-4.14.314-droidian3-rc2
 
- -- berbascum <berbascum@ticv.cat>  Tue, 17 Sep 2024 02:06:42 +0200
+ -- berbascum <berbascum@ticv.cat>  Tue, 17 Sep 2024 02:52:06 +0200
 
 linux-android-xiaomi-vayu (4.14.314+droidian3-rc1) next; urgency=medium
 
