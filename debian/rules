@@ -17,8 +17,8 @@ debian/control:
 		-e "s|@DEB_BUILD_FOR@|$(DEB_BUILD_FOR)|g" \
 		/usr/share/linux-packaging-snippets/control.in > debian/control
 	# Remove python prebuilt from control for aarch64
-	@ARCH=$$(uname -m); \
-	if [ "$$ARCH" = "aarch64" ]; then \
+	@HOST_ARCH=$$(uname -m); \
+	if [ "$$HOST_ARCH" = "aarch64" ]; then \
 		sed -i '/android-platform-prebuilts-python-linux-x86-2.7.5,/d' debian/control; \
 	fi
 
