@@ -211,35 +211,47 @@ BUILD_LLVM = 1
 # Enable verbose mode
 ENABLE_VERBOSE = 0
 
-# Set clang version
+# Set the Droidian official clang version
 #CLANG_VERSION = 10.0-r370808
 #CLANG_VERSION = 11.0-r383902
 #CLANG_VERSION = 12.0-r416183b
-#CLANG_VERSION = 14.0-r450784d
+CLANG_VERSION = 14.0-r450784d
 #CLANG_VERSION = 17.0-r487747
 
-# Set to 1 to use a manually installed toolchain
+# clang version for arm64 host (14 to 18)
+CLANG_VERSION_ARM64 = 14
+
+# CLANG_CUSTOM
+# Set to 1 to use a manually installed clang prebuilt
+# This will disable the droidian clang package from the build depends
+# The CLANG_VERSION var will not be applied
 # Remember to update the path in BUILD_PATH
 CLANG_CUSTOM = 1
 
 # Extra paths to prepend to the PATH variable. You'll probably want
 # to specify the clang path here (the default).
-#BUILD_PATH = /usr/lib/llvm-android-$(CLANG_VERSION)/bin
-BUILD_PATH = /usr/lib/llvm-14/bin
+BUILD_PATH = /usr/lib/llvm-android-$(CLANG_VERSION)/bin
 
 # Extra packages to add to the Build-Depends section. Mainline builds
 # can have this section empty, unless cross-building.
 # The default is enough to install the Android toolchain, including clang.
-
-# Toolchains for x86_64 host
-#DEB_TOOLCHAIN = linux-initramfs-halium-generic:arm64, binutils-aarch64-linux-gnu, gcc-4.9-aarch64-linux-android, g++-4.9-aarch64-linux-android, libgcc-4.9-dev-aarch64-linux-android-cross
-
-# Toolchains for aarch64 host, only from clang-14 above
-DEB_TOOLCHAIN = linux-initramfs-halium-generic:arm64, binutils-aarch64-linux-gnu, clang-14, lld-14, llvm-14-tools, llvm-14-dev, llvm-14-linker-tools
-# Configure BUILD_PATH = /usr/lib/llvm-14/bin
+DEB_TOOLCHAIN = linux-initramfs-halium-generic:arm64, binutils-aarch64-linux-gnu, gcc-4.9-aarch64-linux-android, g++-4.9-aarch64-linux-android, libgcc-4.9-dev-aarch64-linux-android-cross
 
 # Where we're building on
+HOST_ARCH = $(shell uname -m)
+ifeq ($(HOST_ARCH),aarch64)
 DEB_BUILD_ON = arm64
+else
+DEB_BUILD_ON = amd64
+endif
+
+# Toolchains for aarch64 host
+# Only clangs 14 to 18 are still supported
+ifeq ($(HOST_ARCH),aarch64)
+CLANG_CUSTOM = 1
+DEB_TOOLCHAIN = linux-initramfs-halium-generic:arm64, binutils-aarch64-linux-gnu, clang-$(CLANG_VERSION_ARM64), lld-$(CLANG_VERSION_ARM64), llvm-$(CLANG_VERSION_ARM64)-tools, llvm-$(CLANG_VERSION_ARM64)-dev, llvm-$(CLANG_VERSION_ARM64)-linker-tools
+BUILD_PATH = /usr/lib/llvm-$(CLANG_VERSION_ARM64)/bin
+endif
 
 # Where we're going to run this kernel on
 DEB_BUILD_FOR = arm64
