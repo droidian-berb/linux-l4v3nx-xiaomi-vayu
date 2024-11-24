@@ -226,7 +226,7 @@ CLANG_VERSION_ARM64 = 14
 # This will disable the droidian clang package from the build depends
 # The CLANG_VERSION var will not be applied
 # Remember to update the path in BUILD_PATH
-CLANG_CUSTOM = 1
+CLANG_CUSTOM = 0
 
 # Extra paths to prepend to the PATH variable. You'll probably want
 # to specify the clang path here (the default).
