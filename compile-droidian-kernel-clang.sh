@@ -284,6 +284,7 @@ if [ "$1" == "releng" ]; then
     #
     ## Use an unofficial kernel-snippet.
     wget -O /usr/share/linux-packaging-snippets/kernel-snippet.mk https://raw.githubusercontent.com/droidian-berb/linux-packaging-snippets/droidian-extended/kernel-snippet.mk
+    sed -i "s/^KERNEL_RELEASE = \$(KERNEL_BASE_VERSION)-\$(DEVICE_VENDOR)-\$(DEVICE_MODEL)/KERNEL_RELEASE = \$(KERNEL_BASE_VERSION)-\$(DEVICE_VENDOR)-\$(DEVICE_MODEL)-\$(KERNEL_DEVELOPER)/g" /usr/share/linux-packaging-snippets/kernel-snippet.mk
 #    sed -i 's/CROSS_COMPILE_ARM32/CROSS_COMPILE_COMPAT/g' /usr/share/linux-packaging-snippets/kernel-snippet.mk
     #
 #   fn_install_prereqs_droidian_kernel_info
