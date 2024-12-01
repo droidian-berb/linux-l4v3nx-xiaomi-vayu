@@ -6,6 +6,8 @@ include /usr/share/linux-packaging-snippets/kernel-snippet.mk
 	dh $@
 
 debian/control:
+	## Customization like kernel developer in kernel name
+	cat /buildd/sources/debian/control.in > /usr/share/linux-packaging-snippets/control.in;
 	# Override to enable aarch64 host compat
 	# Remove python prebuilt from control.in for aarch64 compat
 	# Requires a custom path-override-prepare:
